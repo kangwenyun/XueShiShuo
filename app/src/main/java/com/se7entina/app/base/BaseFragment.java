@@ -14,6 +14,7 @@ public abstract class BaseFragment extends Fragment {
 
     private View rootView;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
