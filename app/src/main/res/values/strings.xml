@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">学士说</string>
+    <string name="app_name">app</string>
     <string name="cube_ptr_hours_ago"> 小时之前</string>
     <string name="cube_ptr_last_update">上次更新: </string>
     <string name="cube_ptr_minutes_ago"> 分钟之前</string>
@@ -9,6 +9,8 @@
     <string name="cube_ptr_refreshing">加载中...</string>
     <string name="cube_ptr_release_to_refresh">释放刷新</string>
     <string name="cube_ptr_seconds_ago"> 秒之前</string>
+    <string name="settings_error_market">无法打开应用市场</string>
+    <string name="tips_strings">提示</string>
     <string name="student">我是学生/家长</string>
     <string name="teacher">我是家教</string>
     <string name="phone_number">手机号</string>
