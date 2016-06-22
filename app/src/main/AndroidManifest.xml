@@ -34,5 +34,9 @@
         android:name=".ui.activity.MainUIActivity"
         android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".ui.activity.TeacherInfoActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 </manifest>

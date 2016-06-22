@@ -2,5 +2,7 @@
 <resources>
     <item type="id" name="viewpager"/>
     <item type="id" name="indicator"/>
+    <item type="id" name="teacher_name"/>
+    <item type="id" name="teacher_academy"/>
 
 </resources>

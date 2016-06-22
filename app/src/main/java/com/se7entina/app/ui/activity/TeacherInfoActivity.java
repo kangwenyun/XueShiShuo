@@ -3,6 +3,7 @@ package com.se7entina.app.ui.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextPaint;
+import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -29,6 +30,10 @@ public class TeacherInfoActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.teacher_info);
+        TextView tvTitle = (TextView) findViewById(R.id.tv_head);
+        tvTitle.setText("教师信息");
+
         teacher_name = (TextView)findViewById(R.id.teacher_name);
         TextPaint tp = teacher_name.getPaint();
         tp.setFakeBoldText(true);
@@ -39,7 +44,11 @@ public class TeacherInfoActivity extends Activity {
         teach_experience = (TextView)findViewById(R.id.teach_experience);
         evaluation = (TextView)findViewById(R.id.evaluation);
         subject_list = (ListView)findViewById(R.id.subject_list);
-        adapter = new ArrayAdapter(this,R.layout.subject,);//适配subject.xml里的数据。。。。不会写了。。。T_T
-        subject_list.setAdapter(adapter);
+//        adapter = new ArrayAdapter(this,R.layout.subject,);//适配subject.xml里的数据。。。。不会写了。。。T_T
+//        subject_list.setAdapter(adapter);
+    }
+
+    public void back(View view){
+        finish();
     }
 }
