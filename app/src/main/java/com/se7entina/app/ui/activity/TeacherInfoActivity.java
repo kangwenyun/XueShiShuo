@@ -1,6 +1,7 @@
 package com.se7entina.app.ui.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextPaint;
 import android.view.View;
@@ -25,6 +26,7 @@ public class TeacherInfoActivity extends Activity {
     private TextView location;
     private TextView teach_experience;
     private TextView evaluation;
+    private ImageView call_teacher;
     Adapter adapter;
 
     @Override
@@ -43,6 +45,19 @@ public class TeacherInfoActivity extends Activity {
         location = (TextView)findViewById(R.id.location);
         teach_experience = (TextView)findViewById(R.id.teach_experience);
         evaluation = (TextView)findViewById(R.id.evaluation);
+        call_teacher = (ImageView)findViewById(R.id.call_teacher);
+        call_teacher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                if(){//已登录
+
+                }else{//未登录
+                    intent = new Intent(TeacherInfoActivity.this, SelectActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
         subject_list = (ListView)findViewById(R.id.subject_list);
 //        adapter = new ArrayAdapter(this,R.layout.subject,);//适配subject.xml里的数据。。。。不会写了。。。T_T
 //        subject_list.setAdapter(adapter);
