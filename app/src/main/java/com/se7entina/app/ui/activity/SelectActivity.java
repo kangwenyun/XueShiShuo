@@ -1,6 +1,7 @@
 package com.se7entina.app.ui.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -31,7 +32,8 @@ public class SelectActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.student_selection:
-
+                Intent intent = new Intent(this,MainUIActivity.class);
+                startActivity(intent);
                 break;
             case  R.id.teacher_selection:
 

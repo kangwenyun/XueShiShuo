@@ -23,7 +23,16 @@
         android:screenOrientation="portrait" />
 
     <activity
+        android:name=".ui.activity.SelectActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".ui.activity.LoginStudentActivity"
+        android:screenOrientation="portrait"/>
+
+    <activity
         android:name=".ui.activity.MainUIActivity"
         android:screenOrientation="portrait" />
+
     </application>
 </manifest>

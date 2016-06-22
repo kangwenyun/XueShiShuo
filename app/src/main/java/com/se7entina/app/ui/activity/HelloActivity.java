@@ -71,7 +71,7 @@ public class HelloActivity extends Activity {
                         Intent intent;
                         App app = (App) getApplication();
                         if (app.initFirstSetting()) {
-                            intent = new Intent(HelloActivity.this, MainUIActivity.class);
+                            intent = new Intent(HelloActivity.this, SelectActivity.class);
                             startActivity(intent);
                             overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
                         } else {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">app</string>
+    <string name="app_name">学士说</string>
     <string name="cube_ptr_hours_ago"> 小时之前</string>
     <string name="cube_ptr_last_update">上次更新: </string>
     <string name="cube_ptr_minutes_ago"> 分钟之前</string>
@@ -20,5 +20,33 @@
     <string name="login_student">登录</string>
     <string name="register_student">注册</string>
     <string name="forget_key">忘记密码？</string>
+    <string name="teacher_info">教师信息</string>
+    <string name="teacher_name">许廷昆</string>
+    <string name="teacher_school">学校:</string>
+    <string name="teacher_school_name">辽宁工程技术大学</string>
+    <string name="teacher_academy">学院:</string>
+    <string name="teacher_academy_name">矿业学院</string>
+    <string name="subject">教学科目</string>
+    <string name="area">教学区域</string>
+    <string name="teach_experience">教学经历</string>
+    <string name="evaluation">自我评价</string>
+    <string name="evaluation_content">认真负责</string>
+    <string name="chinese">语文</string>
+    <string name="middle_school">初中</string>
+    <string name="high_school">高中</string>
+    <string name="class_hour_cost">课时费：</string>
+    <string name="unit">元/小时</string>
+    <string name="location">辽宁省大连市</string>
+    <string name="experience">有过四次家教经历</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+    <string name="morning">上午:</string>
+    <string name="afternoon">下午:</string>
+    <string name="evening">晚上:</string>
 
 </resources>
