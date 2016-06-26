@@ -1,6 +1,7 @@
 package com.se7entina.app.ui.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -37,6 +38,7 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
+        Intent intent;
         switch (v.getId()){
             case R.id.login_student:
 
@@ -45,7 +47,8 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
 
                 break;
             case R.id.forget_key:
-
+                intent = new Intent(LoginStudentActivity.this,FindKeyActivity.class);
+                startActivity(intent);
                 break;
             default:
                 break;

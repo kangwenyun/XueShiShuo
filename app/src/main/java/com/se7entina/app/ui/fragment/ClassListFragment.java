@@ -1,5 +1,6 @@
 package com.se7entina.app.ui.fragment;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.se7entina.app.R;
 import com.se7entina.app.base.BaseFragment;
 import com.se7entina.app.bean.ClassBean;
+import com.se7entina.app.ui.activity.TeacherInfoActivity;
 import com.se7entina.app.ui.adapter.ClassListAdapter;
 import com.se7entina.app.ui.adapter.ListDropDownAdapter;
 import com.se7entina.app.util.LogCat;
@@ -201,6 +203,13 @@ public class ClassListFragment extends BaseFragment {
         classListAdapter = new ClassListAdapter(getActivity(), classBeanList);
         classListAdapter.setData(classBeanList);
         listView.setAdapter(classListAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(),TeacherInfoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

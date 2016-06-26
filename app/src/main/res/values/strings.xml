@@ -78,4 +78,12 @@
     <string name="system_notice_reply">我是回复</string>
     <string name="reply_hint">回复</string>
     <string name="send">发送</string>
+    <string name="find_the_key">找回密码</string>
+    <string name="identity_authentication">身份验证：</string>
+    <string name="input_phone_number_hint">请输入您的手机号</string>
+    <string name="input_verification_code_hint">请输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="set_new_key">设置新密码：</string>
+    <string name="input_the_new_key_hint">请设置新密码</string>
+    <string name="input_the_new_key_again_hint">请请输入一次</string>
 </resources>
