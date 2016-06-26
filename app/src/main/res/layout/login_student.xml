@@ -86,12 +86,12 @@
             android:background="@android:color/transparent"
             />
         <Button
-            android:id="@+id/register_student"
+            android:id="@+id/register"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="3"
             android:background="@android:color/transparent"
-            android:text="@string/register_student"
+            android:text="@string/register"
             android:textSize="20sp"/>
     </LinearLayout>
     <LinearLayout

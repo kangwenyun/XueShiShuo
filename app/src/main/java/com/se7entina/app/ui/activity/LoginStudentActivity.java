@@ -18,7 +18,7 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
     private EditText input_phone_number;
     private EditText input_key;
     private Button login_student;
-    private Button register_student;
+    private Button register;
     private Button forget_key;
 
     @Override
@@ -29,10 +29,10 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
         input_phone_number = (EditText)findViewById(R.id.input_phone_number);
         input_key = (EditText)findViewById(R.id.input_key);
         login_student = (Button)findViewById(R.id.login_student);
-        register_student = (Button)findViewById(R.id.register_student);
+        register = (Button)findViewById(R.id.register);
         forget_key = (Button)findViewById(R.id.forget_key);
         login_student.setOnClickListener(this);
-        register_student.setOnClickListener(this);
+        register.setOnClickListener(this);
         forget_key.setOnClickListener(this);
     }
 
@@ -43,8 +43,9 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
             case R.id.login_student:
 
                 break;
-            case R.id.register_student:
-
+            case R.id.register:
+                intent = new Intent(LoginStudentActivity.this,RegisterActivity.class);
+                startActivity(intent);
                 break;
             case R.id.forget_key:
                 intent = new Intent(LoginStudentActivity.this,FindKeyActivity.class);
