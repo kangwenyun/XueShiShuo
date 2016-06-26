@@ -6,6 +6,7 @@ import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.se7entina.app.R;
@@ -27,6 +28,8 @@ public class UpdateKeyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.update_key);
+        TextView tvHead = (TextView) findViewById(R.id.tv_head);
+        tvHead.setText("修改密码");
         old_key = (EditText)findViewById(R.id.old_key);
         new_key = (EditText)findViewById(R.id.new_key);
         new_key_again = (EditText)findViewById(R.id.new_key_again);
@@ -42,5 +45,9 @@ public class UpdateKeyActivity extends Activity {
                 finish();//返回
             }
         });
+    }
+
+    public void back(View view){
+        finish();
     }
 }

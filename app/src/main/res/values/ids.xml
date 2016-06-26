@@ -1,17 +1,8 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item type="id" name="viewpager"/>
     <item type="id" name="indicator"/>
     <item type="id" name="teacher_name"/>
     <item type="id" name="teacher_academy"/>
-=======
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="id" name="viewpager"/>
-    <item type="id" name="indicator"/>
-    <item type="id" name="teacher_name"/>
-    <item type="id" name="teacher_academy"/>
-
->>>>>>> 15769411ff005baf81980f02469bda09dbbcebe0
+    <item type="id" name="reply"/>
 </resources>

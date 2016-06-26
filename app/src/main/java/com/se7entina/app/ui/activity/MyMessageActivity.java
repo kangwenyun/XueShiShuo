@@ -20,6 +20,9 @@ public class MyMessageActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.my_message);
+        TextView tvHead = (TextView) findViewById(R.id.tv_head);
+        tvHead.setText("我的消息");
         system_notice_colume = (LinearLayout)findViewById(R.id.system_notice_colume);
         singleline_text = (TextView)findViewById(R.id.singleline_text);
         system_notice_time = (TextView)findViewById(R.id.system_notice_time);
@@ -30,5 +33,9 @@ public class MyMessageActivity extends Activity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void back(View view){
+        finish();
     }
 }
