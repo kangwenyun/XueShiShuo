@@ -38,5 +38,23 @@
             android:name=".ui.activity.TeacherInfoActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".ui.activity.AboutAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FindKeyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MyMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.QuestionFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SystemNoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UpdateKeyActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>

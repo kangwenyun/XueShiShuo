@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.se7entina.app.R;
 
@@ -15,7 +16,6 @@ import com.se7entina.app.R;
  * Created by Administrator on 2016/6/22.
  */
 public class QuestionFeedbackActivity extends Activity implements View.OnClickListener {
-    private ImageView question_back;
     private EditText most_hint;
     private EditText QQ_hint;
     private Button submit;
@@ -27,8 +27,8 @@ public class QuestionFeedbackActivity extends Activity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_feedback);
-        question_back = (ImageView)findViewById(R.id.question_back);
-        question_back.setOnClickListener(this);
+        TextView tvHead = (TextView) findViewById(R.id.tv_head);
+        tvHead.setText("问题反馈");
         most_hint = (EditText)findViewById(R.id.most_hint);
         QQ_hint = (EditText)findViewById(R.id.QQ_hint);
         submit = (Button)findViewById(R.id.submit);
@@ -42,8 +42,11 @@ public class QuestionFeedbackActivity extends Activity implements View.OnClickLi
         switch (v.getId()){
             case R.id.submit:
                 //提交数据
-            case R.id.question_back:
                 finish();
         }
+    }
+
+    public void back(View view){
+        finish();
     }
 }

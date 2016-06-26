@@ -3,39 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <LinearLayout
+
+    <include
+        android:id="@+id/ly_head"
+        layout="@layout/head"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:background="#8FC5CF">
-        <ImageView
-            android:id="@+id/update_back"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="back"
-            android:src="@mipmap/nav_icon_back_3"/>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:text="@string/update_key"
-                android:textSize="30dp"
-                android:textColor="#FFFFFF"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"/>
-        </LinearLayout>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"/>
-    </LinearLayout>
+        android:layout_height="40dp"
+        />
+
     <EditText
         android:id="@+id/old_key"
         android:layout_width="match_parent"

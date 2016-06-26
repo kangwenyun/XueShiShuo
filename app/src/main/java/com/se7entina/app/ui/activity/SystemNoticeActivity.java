@@ -23,6 +23,9 @@ public class SystemNoticeActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.system_notice);
+        TextView tvHead = (TextView) findViewById(R.id.tv_head);
+        tvHead.setText("系统通知");
         system_notice_time_specific_1 = (TextView)findViewById(R.id.system_notice_time_specific_1);
         system_notice_content = (TextView)findViewById(R.id.system_notice_content);
         system_notice_time_specific_2 = (TextView)findViewById(R.id.system_notice_time_specific_2);
@@ -35,6 +38,10 @@ public class SystemNoticeActivity extends Activity {
                 finish();
             }
         });
+    }
+
+    public void back(View view){
+        finish();
     }
 }
 

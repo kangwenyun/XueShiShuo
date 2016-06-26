@@ -1,12 +1,21 @@
 package com.se7entina.app.ui.fragment;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.se7entina.app.App;
 import com.se7entina.app.R;
 import com.se7entina.app.base.BaseFragment;
+import com.se7entina.app.ui.activity.AboutAppActivity;
+import com.se7entina.app.ui.activity.MyMessageActivity;
+import com.se7entina.app.ui.activity.QuestionFeedbackActivity;
+import com.se7entina.app.ui.activity.UpdateKeyActivity;
 import com.se7entina.app.widgets.CharType;
+import com.se7entina.app.widgets.ToastTools;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,6 +48,38 @@ public class PersonalInfoFragment extends BaseFragment {
                 new String[]{"text","pic"}, new int[]{R.id.tv_system_title,R.id.iv_pic_show});
 
         infoListView.setAdapter(adapter);
+        infoListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = null;
+                switch (position){
+                    case 0:
+                        //我的消息
+                        intent = new Intent(getActivity(), MyMessageActivity.class);
+                        break;
+                    case 1:
+                        //修改密码
+                        intent = new Intent(getActivity(), UpdateKeyActivity.class);
+                        break;
+                    case 2:
+                        //问题反馈
+                        intent = new Intent(getActivity(), QuestionFeedbackActivity.class);
+                        break;
+                    case 3:
+                        //分享应用
+                        startMarket();
+                        break;
+                    case 4:
+                        //关于应用
+                        intent = new Intent(getActivity(), AboutAppActivity.class);
+                        break;
+
+                }
+                if(intent!=null){
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     private void setListData() {
@@ -74,5 +115,18 @@ public class PersonalInfoFragment extends BaseFragment {
     @Override
     public void onAgain(View rootView) {
 
+    }
+
+    public void startMarket() {
+        Uri uri = Uri.parse(String.format("market://details?id=%s", App.getPackage(getActivity())));
+        if (App.isIntentSafe(getActivity(), uri)) {
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            App.getContext().startActivity(intent);
+        }
+        // 没有安装市场
+        else {
+            ToastTools.show(getActivity(), R.string.settings_error_market);
+        }
     }
 }
