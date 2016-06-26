@@ -50,8 +50,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
-                android:background="@android:color/transparent"
-                android:layout_below="@id/iv_sex_img"/>
+                android:background="@android:color/transparent"/>
         </LinearLayout>
         <!--具体科目-->
         <LinearLayout

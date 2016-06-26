@@ -48,5 +48,34 @@
     <string name="morning">上午:</string>
     <string name="afternoon">下午:</string>
     <string name="evening">晚上:</string>
-
+    <string name="question_feedback">问题反馈</string>
+    <string name="question_advice">请输入您的问题或者建议:</string>
+    <string name="most_hint">您最多可输入100字</string>
+    <string name="QQ_hint">请留下您的联系方式以便我们进行回复（QQ、电话、邮箱等）</string>
+    <string name="submit">确认提交</string>
+    <string name="share_app">分享应用</string>
+    <string name="update_key">修改密码</string>
+    <string name="confirm">确定</string>
+    <string name="old_key">请输入原密码</string>
+    <string name="new_key">请输入新密码</string>
+    <string name="new_key_again">请再输入一次</string>
+    <string name="about_app">关于应用</string>
+    <string name="user_communication_group">用户交流群</string>
+    <string name="user_communication_group_number">156481561</string>
+    <string name="email">邮箱</string>
+    <string name="email_number">1980302350@qq.com</string>
+    <string name="customer_service_telephone">客服电话</string>
+    <string name="customer_service_telephone_number">18341842769</string>
+    <string name="service_item">服务条款</string>
+    <string name="score">去评分</string>
+    <string name="my_message">我的消息</string>
+    <string name="system_notice">系统通知</string>
+    <string name="singleline_text">单行文字</string>
+    <string name="system_notice_time">2016-6-25</string>
+    <string name="system_notice_time_specific_1">2月12日 12:35</string>
+    <string name="system_notice_time_specific_2">2月12日 12:36</string>
+    <string name="system_notice_content">我是系统通知内容</string>
+    <string name="system_notice_reply">我是回复</string>
+    <string name="reply_hint">回复</string>
+    <string name="send">发送</string>
 </resources>

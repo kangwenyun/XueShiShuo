@@ -6,9 +6,9 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.se7entina.app.R;
+
 
 /**
  * Created by Administrator on 2016/6/16.

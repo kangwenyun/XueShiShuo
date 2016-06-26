@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.text.TextPaint;
 import android.view.View;
 import android.widget.Adapter;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -32,6 +31,7 @@ public class TeacherInfoActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.teacher_info);
         teacher_name = (TextView)findViewById(R.id.teacher_name);
         TextPaint tp = teacher_name.getPaint();
         tp.setFakeBoldText(true);
@@ -46,7 +46,7 @@ public class TeacherInfoActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                if(){//已登录
+                if(true){//已登录
 
                 }else{//未登录
                     intent = new Intent(TeacherInfoActivity.this, SelectActivity.class);
@@ -55,7 +55,7 @@ public class TeacherInfoActivity extends Activity {
             }
         });
         subject_list = (ListView)findViewById(R.id.subject_list);
-        adapter = new ArrayAdapter(this,R.layout.subject,);//适配subject.xml里的数据。。。。不会写了。。。T_T
-        subject_list.setAdapter(adapter);
+//        adapter = new ArrayAdapter(this,R.layout.subject,);//适配subject.xml里的数据。。。。不会写了。。。T_T
+//        subject_list.setAdapter(adapter);
     }
 }
