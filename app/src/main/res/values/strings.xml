@@ -94,13 +94,23 @@
     <string name="user_name_">用户名：</string>
     <string name="user_name">发电机启动</string>
     <string name="sex_student">学生性别：</string>
-    <string name="school">所在学校：</string>
+    <string name="school">学校：</string>
     <string name="school_name">阜新市第十一中学</string>
-    <string name="grade_">所在年级：</string>
+    <string name="grade_">年级：</string>
     <string name="grade">初二</string>
     <string name="finish">完成</string>
     <string name="ignore">跳过</string>
     <string name="boy">男</string>
     <string name="girl">女</string>
+    <string name="head_portrait">头像：</string>
+    <string name="name">姓名：</string>
+    <string name="nickname">昵称：</string>
+    <string name="sex">性别：</string>
+    <string name="class_">班级：</string>
+    <string name="email_1">邮箱：</string>
+    <string name="address">家庭地址：</string>
+    <string name="contact_phone">联系电话：</string>
+    <string name="contact_phone_number">18341842769</string>
+
 
 </resources>

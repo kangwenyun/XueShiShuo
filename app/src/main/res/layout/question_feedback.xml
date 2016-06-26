@@ -33,7 +33,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="10dp"
-            android:background="#EAEAEA"
+            android:background="#DEDEDE"
             android:layout_marginTop="10dp"/>
         <EditText
             android:id="@+id/QQ_hint"
@@ -55,9 +55,11 @@
         <Button
             android:id="@+id/submit"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="40sp"
             android:layout_weight="1"
+            android:layout_marginTop="20dp"
             android:text="@string/submit"
+            android:textSize="18sp"
             android:background="#FFFACD"/>
         <TextView
             android:layout_width="0dp"

@@ -14,6 +14,7 @@ import com.se7entina.app.ui.activity.AboutAppActivity;
 import com.se7entina.app.ui.activity.MyMessageActivity;
 import com.se7entina.app.ui.activity.QuestionFeedbackActivity;
 import com.se7entina.app.ui.activity.UpdateKeyActivity;
+import com.se7entina.app.view.percent.PercentRelativeLayout;
 import com.se7entina.app.widgets.CharType;
 import com.se7entina.app.widgets.ToastTools;
 

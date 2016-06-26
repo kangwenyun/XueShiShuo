@@ -5,4 +5,5 @@
     <item type="id" name="teacher_name"/>
     <item type="id" name="teacher_academy"/>
     <item type="id" name="reply"/>
+    <item type="id" name="head_portrait"/>
 </resources>

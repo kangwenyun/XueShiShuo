@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 import com.se7entina.app.R;
 
@@ -24,6 +25,9 @@ public class CreateInfoActivity extends Activity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.create_info);
+        TextView tvHead = (TextView) findViewById(R.id.tv_head);
+        tvHead.setText("创建信息");
         user_name = (EditText)findViewById(R.id.user_name);
         boy = (RadioButton)findViewById(R.id.boy);
         girl = (RadioButton)findViewById(R.id.girl);
