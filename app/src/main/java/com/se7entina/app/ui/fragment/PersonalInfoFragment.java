@@ -88,7 +88,7 @@ public class PersonalInfoFragment extends BaseFragment {
 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("text", "我的消息");
-        map.put("pic", R.mipmap.advance);
+        map.put("pic", R.mipmap.my_message);
         listData.add(map);
 
         map = new HashMap<String, Object>();

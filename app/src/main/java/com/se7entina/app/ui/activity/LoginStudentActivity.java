@@ -15,8 +15,8 @@ import com.se7entina.app.R;
  * Created by Administrator on 2016/6/16.
  */
 public class LoginStudentActivity extends Activity implements View.OnClickListener {
-    private EditText input_phone_number;
-    private EditText input_key;
+    private EditText user_name_;
+    private EditText key;
     private Button login_student;
     private Button register;
     private Button forget_key;
@@ -26,8 +26,8 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.login_student);
-        input_phone_number = (EditText)findViewById(R.id.input_phone_number);
-        input_key = (EditText)findViewById(R.id.input_key);
+        user_name_ = (EditText)findViewById(R.id.user_name_);
+        key = (EditText)findViewById(R.id.key);
         login_student = (Button)findViewById(R.id.login_student);
         register = (Button)findViewById(R.id.register);
         forget_key = (Button)findViewById(R.id.forget_key);

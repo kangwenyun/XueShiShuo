@@ -18,7 +18,6 @@ import com.se7entina.app.R;
 public class TeacherInfoActivity extends Activity {
     private TextView teacher_name;
     private ImageView sex;
-    private TextView Chinese;
     private ListView subject_list;
     private TextView teacher_school_name;
     private TextView teacher_academy_name;
@@ -48,11 +47,11 @@ public class TeacherInfoActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                if(true){//已登录
-
-                }else{//未登录
-                    intent = new Intent(TeacherInfoActivity.this, SelectActivity.class);
+                if(true){//未登录
+                    intent = new Intent(TeacherInfoActivity.this, LoginStudentActivity.class);
                     startActivity(intent);
+                }else{//已登录
+
                 }
             }
         });

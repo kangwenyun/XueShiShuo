@@ -3,6 +3,7 @@ package com.se7entina.app.ui.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -24,6 +25,7 @@ public class PersonInfoActivity extends Activity implements View.OnClickListener
     private EditText contact_phone_number;
     private TextView city;
     private TextView county;
+    private Button person_info_confirm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,8 @@ public class PersonInfoActivity extends Activity implements View.OnClickListener
         city.setOnClickListener(this);
         county = (TextView)findViewById(R.id.county);
         county.setOnClickListener(this);
+        person_info_confirm = (Button)findViewById(R.id.person_info_confirm);
+        person_info_confirm.setOnClickListener(this);
     }
 
     @Override
@@ -52,6 +56,9 @@ public class PersonInfoActivity extends Activity implements View.OnClickListener
 
                 break;
             case R.id.county:
+
+                break;
+            case R.id.person_info_confirm:
 
                 break;
             default:

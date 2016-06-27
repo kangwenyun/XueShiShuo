@@ -259,4 +259,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="街道/小区"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:id="@+id/person_info_confirm"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:text="@string/confirm"
+            android:textSize="20sp"
+            android:background="#FFFACD"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
 </LinearLayout>

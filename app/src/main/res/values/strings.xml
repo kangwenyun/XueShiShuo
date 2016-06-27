@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">学士说</string>
+    <string name="xue">学</string>
+    <string name="shi">士</string>
+    <string name="shuo">说</string>
     <string name="cube_ptr_hours_ago"> 小时之前</string>
     <string name="cube_ptr_last_update">上次更新: </string>
     <string name="cube_ptr_minutes_ago"> 分钟之前</string>
@@ -14,9 +17,7 @@
     <string name="student">我是学生/家长</string>
     <string name="teacher">我是家教</string>
     <string name="phone_number">手机号</string>
-    <string name="input_phone_number">请输入手机号</string>
-    <string name="key">密码</string>
-    <string name="input_key">请输入密码</string>
+    <string name="key">密码：</string>
     <string name="login_student">登录</string>
     <string name="register">注册</string>
     <string name="forget_key">忘记密码？</string>
