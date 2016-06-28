@@ -16,46 +16,26 @@
             android:src="@mipmap/person"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_marginTopPercent="20%h"
+            app:layout_marginTopPercent="30%h"
             app:layout_marginLeftPercent="10%w"
             />
         <TextView
             android:id="@+id/tv_user"
             android:textColor="@color/white"
-            android:textSize="@dimen/normal_text_size"
+            android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="用户："
-            app:layout_marginTopPercent="20%h"
+            android:text="登陆/注册"
+            app:layout_marginTopPercent="40%h"
             app:layout_marginLeftPercent="35%w"/>
-
-        <TextView android:textColor="@color/white"
-            android:textSize="@dimen/normal_text_size"
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="186****2511"
-            app:layout_marginTopPercent="20%h"
-            android:layout_toRightOf="@+id/tv_user"/>
+            app:layout_marginTopPercent="35%h"
+            app:layout_marginLeftPercent="80%w"
+            android:src="@mipmap/go"
+            />
 
-        <TextView
-            android:id="@+id/tv_complete"
-            android:textColor="@color/white"
-            android:textSize="@dimen/normal_text_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="资料完善度："
-            android:layout_below="@id/tv_user"
-            app:layout_marginTopPercent="10%h"
-            app:layout_marginLeftPercent="35%w"/>
-
-        <TextView android:textColor="@color/white"
-            android:textSize="@dimen/normal_text_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="10%"
-            android:layout_below="@id/tv_user"
-            app:layout_marginTopPercent="10%h"
-            android:layout_toRightOf="@+id/tv_complete"/>
     </com.se7entina.app.view.percent.PercentRelativeLayout>
 
     <ListView

@@ -15,11 +15,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"
+        android:background="@color/white"
         >
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:src="@mipmap/logo"
             android:layout_gravity="center"/>
         <TextView
@@ -29,14 +29,11 @@
             android:textSize="35sp"
             android:layout_gravity="center"/>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="horizontal">
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -55,13 +52,11 @@
                 android:textSize="20sp"/>
         </RelativeLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="horizontal">
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -80,13 +75,11 @@
                 android:textSize="20sp"/>
         </RelativeLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="horizontal">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -105,13 +98,11 @@
                 android:textSize="20sp"/>
         </RelativeLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
@@ -120,13 +111,11 @@
             android:text="@string/service_item"
             android:textSize="20sp"/>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
@@ -135,8 +124,4 @@
             android:text="@string/score"
             android:textSize="20sp"/>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
 </LinearLayout>

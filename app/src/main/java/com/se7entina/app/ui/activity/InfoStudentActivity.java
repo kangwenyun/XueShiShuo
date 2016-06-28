@@ -13,7 +13,7 @@ import com.se7entina.app.R;
 /**
  * Created by Administrator on 2016/6/26.
  */
-public class PersonInfoActivity extends Activity implements View.OnClickListener {
+public class InfoStudentActivity extends Activity implements View.OnClickListener {
     private EditText name;
     private EditText nickname;
     private RadioButton sex_boy;
@@ -25,13 +25,17 @@ public class PersonInfoActivity extends Activity implements View.OnClickListener
     private EditText contact_phone_number;
     private TextView city;
     private TextView county;
-    private Button person_info_confirm;
+    TextView tvHead;
+    TextView tvClick;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.person_info);
-        TextView tvHead = (TextView) findViewById(R.id.tv_head);
+        setContentView(R.layout.info_student);
+        tvHead = (TextView) findViewById(R.id.tv_head);
         tvHead.setText("个人资料");
+        tvClick = (Button) findViewById(R.id.iv_click);
+        tvClick.setText("保存");
+        tvClick.setOnClickListener(this);
         name = (EditText)findViewById(R.id.name);
         nickname = (EditText)findViewById(R.id.nickname);
         sex_boy = (RadioButton)findViewById(R.id.sex_boy);
@@ -45,8 +49,6 @@ public class PersonInfoActivity extends Activity implements View.OnClickListener
         city.setOnClickListener(this);
         county = (TextView)findViewById(R.id.county);
         county.setOnClickListener(this);
-        person_info_confirm = (Button)findViewById(R.id.person_info_confirm);
-        person_info_confirm.setOnClickListener(this);
     }
 
     @Override
@@ -58,7 +60,7 @@ public class PersonInfoActivity extends Activity implements View.OnClickListener
             case R.id.county:
 
                 break;
-            case R.id.person_info_confirm:
+            case R.id.iv_click:
 
                 break;
             default:

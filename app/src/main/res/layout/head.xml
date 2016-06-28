@@ -28,11 +28,11 @@
         app:layout_widthPercent="7.5%w" />
 
 
-    <ImageView
+    <Button
         android:id="@+id/iv_click"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone"
+        android:background="@android:color/transparent"
         app:layout_heightPercent="7.5%w"
         app:layout_marginLeftPercent="4.3%"
         app:layout_marginPercent="2.1%w"

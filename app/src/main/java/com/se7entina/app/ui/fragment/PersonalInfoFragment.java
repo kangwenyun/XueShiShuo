@@ -14,8 +14,6 @@ import com.se7entina.app.ui.activity.AboutAppActivity;
 import com.se7entina.app.ui.activity.MyMessageActivity;
 import com.se7entina.app.ui.activity.QuestionFeedbackActivity;
 import com.se7entina.app.ui.activity.UpdateKeyActivity;
-import com.se7entina.app.view.percent.PercentRelativeLayout;
-import com.se7entina.app.widgets.CharType;
 import com.se7entina.app.widgets.ToastTools;
 
 import java.util.ArrayList;
@@ -93,22 +91,22 @@ public class PersonalInfoFragment extends BaseFragment {
 
         map = new HashMap<String, Object>();
         map.put("text", "修改密码");
-        map.put("pic", R.mipmap.advance);
+        map.put("pic", R.mipmap.update_key);
         listData.add(map);
 
         map = new HashMap<String, Object>();
         map.put("text", "问题反馈");
-        map.put("pic", R.mipmap.advance);
+        map.put("pic", R.mipmap.question_feedback);
         listData.add(map);
 
         map = new HashMap<String, Object>();
         map.put("text", "分享应用");
-        map.put("pic",R.mipmap.advance);
+        map.put("pic",R.mipmap.share_app);
         listData.add(map);
 
         map = new HashMap<String, Object>();
         map.put("text", "关于应用");
-        map.put("pic",R.mipmap.advance);
+        map.put("pic",R.mipmap.about_app);
         listData.add(map);
 
     }

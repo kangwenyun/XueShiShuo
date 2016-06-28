@@ -30,7 +30,7 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
         find_key_back = (ImageView)findViewById(R.id.register_back);
         find_key_back.setOnClickListener(this);
         register_student = (Button)findViewById(R.id.register_teacher);
-        register_teacher.setOnClickListener(this);
+        register_student.setOnClickListener(this);
         register_teacher = (Button)findViewById(R.id.register_teacher);
         register_teacher.setOnClickListener(this);
         input_phone_number_hint = (EditText)findViewById(R.id.input_phone_number_hint);

@@ -11,21 +11,44 @@
         android:layout_height="40dp"
         />
 
-    <EditText
-        android:id="@+id/old_key"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/old_key"/>
-    <EditText
-        android:id="@+id/new_key"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/old_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/old_key"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/new_key"/>
-    <EditText
-        android:id="@+id/new_key_again"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/new_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/new_key"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/new_key_again"/>
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/new_key_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/new_key_again"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

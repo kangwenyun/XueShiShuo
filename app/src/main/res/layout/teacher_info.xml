@@ -16,25 +16,22 @@
     <!--个人基本信息-->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-        <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <include
-            layout="@layout/teacher_person_info"/>
+            android:orientation="horizontal">
+            <include
+                layout="@layout/teacher_person_info"/>
     </LinearLayout>
 
     <!--分界线-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="#DEDEDE"
+        android:background="#F5F5F5"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
@@ -76,7 +73,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="#DEDEDE"
+        android:background="#F5F5F5"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
@@ -94,7 +91,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="#DEDEDE"
+        android:background="#F5F5F5"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
@@ -113,7 +110,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="#DEDEDE"
+        android:background="#F5F5F5"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
@@ -134,7 +131,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="#DEDEDE"
+        android:background="#F5F5F5"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
@@ -156,6 +153,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:src="@mipmap/manimg"/>
-        </LinearLayout>
     </ScrollView>
 </LinearLayout>
