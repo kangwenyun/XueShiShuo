@@ -41,7 +41,7 @@ public class UnPersonalInfoFragment extends BaseFragment {
     @Override
     public void onFirst(View rootView) {
 
-        go = (ImageView)getActivity().findViewById(R.id.go);
+        go = (ImageView)getRootView().findViewById(R.id.go);
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,18 +66,14 @@ public class UnPersonalInfoFragment extends BaseFragment {
                         intent = new Intent(getActivity(), MyMessageActivity.class);
                         break;
                     case 1:
-                        //修改密码
-                        intent = new Intent(getActivity(), UpdateKeyActivity.class);
-                        break;
-                    case 2:
                         //问题反馈
                         intent = new Intent(getActivity(), QuestionFeedbackActivity.class);
                         break;
-                    case 3:
+                    case 2:
                         //分享应用
                         startMarket();
                         break;
-                    case 4:
+                    case 3:
                         //关于应用
                         intent = new Intent(getActivity(), AboutAppActivity.class);
                         break;
@@ -96,11 +92,6 @@ public class UnPersonalInfoFragment extends BaseFragment {
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("text", "我的消息");
         map.put("pic", R.mipmap.my_message);
-        listData.add(map);
-
-        map = new HashMap<String, Object>();
-        map.put("text", "修改密码");
-        map.put("pic", R.mipmap.update_key);
         listData.add(map);
 
         map = new HashMap<String, Object>();

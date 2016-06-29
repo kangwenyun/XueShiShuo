@@ -3,6 +3,8 @@ package com.se7entina.app.ui.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.text.TextPaint;
 import android.view.View;
 import android.view.Window;
@@ -11,12 +13,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.se7entina.app.R;
+import com.se7entina.app.ui.fragment.PersonalInfoFragment;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
  * Created by Administrator on 2016/6/16.
  */
-public class LoginStudentActivity extends Activity implements View.OnClickListener {
+public class LoginStudentActivity extends FragmentActivity implements View.OnClickListener {
     private TextView xue;
     private TextView shi;
     private TextView shuo;
@@ -26,6 +32,8 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
     private Button login_student;
     private Button register;
     private Button forget_key;
+    private Fragment fragment = null;
+    private Map<String, Fragment> map = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +64,11 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
         Intent intent = null;
         switch (v.getId()){
             case R.id.login_student:
-                intent = new Intent(this,MainUIActivity.class);
+//                intent = new Intent(this,MainUIActivity.class);
+//                fragment = new PersonalInfoFragment();
+//                map.put(PersonalInfoFragment.class.getName(), fragment);
+//                getSupportFragmentManager()
+//                        .beginTransaction().replace(R.id.main_ui_fg, fragment).commit();
                 break;
             case R.id.register:
                 intent = new Intent(this,RegisterActivity.class);

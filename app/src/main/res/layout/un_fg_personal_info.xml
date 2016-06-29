@@ -25,7 +25,7 @@
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="登陆/注册"
+            android:text="登录/注册"
             app:layout_marginTopPercent="40%h"
             app:layout_marginLeftPercent="35%w"/>
         <ImageView
