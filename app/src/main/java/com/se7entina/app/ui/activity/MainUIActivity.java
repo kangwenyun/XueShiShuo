@@ -14,8 +14,11 @@ import android.widget.TextView;
 
 import com.se7entina.app.App;
 import com.se7entina.app.R;
+import com.se7entina.app.common.SystemConstant;
 import com.se7entina.app.ui.fragment.ClassListFragment;
+import com.se7entina.app.ui.fragment.PersonalInfoFragment;
 import com.se7entina.app.ui.fragment.UnPersonalInfoFragment;
+import com.se7entina.app.util.SharedPreferencesUtil;
 import com.se7entina.app.widgets.GestureListener;
 
 import java.util.HashMap;
@@ -73,7 +76,11 @@ public class MainUIActivity extends FragmentActivity implements RadioGroup.OnChe
             fragment = map.get(ClassListFragment.class.getName());
             tvHead.setText("家教列表");
         } else if (R.id.main_radioButton2 == checkedId) {
-            fragment = map.get(UnPersonalInfoFragment.class.getName());
+            if(SharedPreferencesUtil.getBoolean(this, SystemConstant.LOGIN_FLAG,false)){
+                fragment = map.get(PersonalInfoFragment.class.getName());
+            }else {
+                fragment = map.get(UnPersonalInfoFragment.class.getName());
+            }
             tvHead.setText("个人中心");
         }
         if (fragment == null) {
@@ -81,8 +88,14 @@ public class MainUIActivity extends FragmentActivity implements RadioGroup.OnChe
                 fragment = new ClassListFragment();
                 map.put(ClassListFragment.class.getName(), fragment);
             } else if (R.id.main_radioButton2 == checkedId) {
-                fragment = new UnPersonalInfoFragment();
-                map.put(UnPersonalInfoFragment.class.getName(), fragment);
+                if(SharedPreferencesUtil.getBoolean(this, SystemConstant.LOGIN_FLAG,false)){
+                    fragment = new PersonalInfoFragment();
+                    map.put(PersonalInfoFragment.class.getName(), fragment);
+                }else {
+                    fragment = new UnPersonalInfoFragment();
+                    map.put(UnPersonalInfoFragment.class.getName(), fragment);
+                }
+
             }
         }
         getSupportFragmentManager()

@@ -11,6 +11,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.se7entina.app.R;
+import com.se7entina.app.common.SystemConstant;
+import com.se7entina.app.util.SharedPreferencesUtil;
 
 /**
  * Created by Administrator on 2016/6/21.
@@ -47,12 +49,13 @@ public class TeacherInfoActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                if(true){//未登录
+                if(SharedPreferencesUtil.getBoolean(getApplicationContext(), SystemConstant.LOGIN_FLAG,false)){//未登录
                     intent = new Intent(TeacherInfoActivity.this, LoginStudentActivity.class);
-                    startActivity(intent);
                 }else{//已登录
+                    intent = new Intent(TeacherInfoActivity.this, MainUIActivity.class);
 
                 }
+                startActivity(intent);
             }
         });
         subject_list = (ListView)findViewById(R.id.subject_list);

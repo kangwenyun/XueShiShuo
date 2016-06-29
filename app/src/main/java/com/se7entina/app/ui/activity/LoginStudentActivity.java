@@ -13,7 +13,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.se7entina.app.R;
+import com.se7entina.app.common.SystemConstant;
 import com.se7entina.app.ui.fragment.PersonalInfoFragment;
+import com.se7entina.app.util.SharedPreferencesUtil;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -64,11 +66,9 @@ public class LoginStudentActivity extends FragmentActivity implements View.OnCli
         Intent intent = null;
         switch (v.getId()){
             case R.id.login_student:
-//                intent = new Intent(this,MainUIActivity.class);
-//                fragment = new PersonalInfoFragment();
-//                map.put(PersonalInfoFragment.class.getName(), fragment);
-//                getSupportFragmentManager()
-//                        .beginTransaction().replace(R.id.main_ui_fg, fragment).commit();
+                intent = new Intent(this,MainUIActivity.class);
+                SharedPreferencesUtil.putBoolean(this, SystemConstant.LOGIN_FLAG,true);
+                startActivity(intent);
                 break;
             case R.id.register:
                 intent = new Intent(this,RegisterActivity.class);
