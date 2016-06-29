@@ -31,16 +31,20 @@ public class SelectActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        Intent intent = null;
         switch (v.getId()){
             case R.id.student_selection:
-                Intent intent = new Intent(this,MainUIActivity.class);
-                startActivity(intent);
+                intent = new Intent(this,MainUIActivity.class);
                 break;
             case  R.id.teacher_selection:
 
                 break;
             default:
                 break;
+        }
+        if(intent != null)
+        {
+            startActivity(intent);
         }
     }
 }

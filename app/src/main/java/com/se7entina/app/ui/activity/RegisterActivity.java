@@ -27,6 +27,7 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.register);
         find_key_back = (ImageView)findViewById(R.id.register_back);
         find_key_back.setOnClickListener(this);
         register_student = (Button)findViewById(R.id.register_teacher);
@@ -46,26 +47,28 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent intent ;
+        Intent intent = null ;
         switch (v.getId()){
             case R.id.find_key_back:
                 finish();
                 break;
             case R.id.register_student:
-
+                intent = new Intent(this,InfoStudentActivity.class);
                 break;
             case R.id.register_teacher:
-
+                intent = new Intent(this,InfoTeacherActivity.class);
                 break;
             case R.id.get_verification_code:
 
                 break;
             case R.id.confirm_1:
-                intent = new Intent(RegisterActivity.this,CreateInfoActivity.class);
-                startActivity(intent);
+                intent = new Intent(this,CreateInfoActivity.class);
                 break;
             default:
                 break;
+        }
+        if(intent != null){
+            startActivity(intent);
         }
     }
 }

@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/school"
-            android:textSize="20sp"/>
+            android:textSize="15sp"/>
         <EditText
             android:id="@+id/school_name_"
             android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:text="@string/academy"
             android:layout_margin="13dp"
-            android:textSize="20sp"/>
+            android:textSize="15sp"/>
         <EditText
             android:id="@+id/academy"
             android:layout_width="match_parent"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/student_id"
-            android:textSize="20sp"/>
+            android:textSize="15sp"/>
         <EditText
             android:id="@+id/student_id"
             android:layout_width="match_parent"

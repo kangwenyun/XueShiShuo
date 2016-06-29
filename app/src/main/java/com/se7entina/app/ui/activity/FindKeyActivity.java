@@ -1,6 +1,7 @@
 package com.se7entina.app.ui.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,7 @@ public class FindKeyActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.find_the_key);
         find_key_back = (ImageView)findViewById(R.id.find_key_back);
         find_key_back.setOnClickListener(this);
         input_phone_number_hint = (EditText)findViewById(R.id.input_phone_number_hint);
@@ -48,7 +50,8 @@ public class FindKeyActivity extends Activity implements View.OnClickListener {
 
                 break;
             case R.id.confirm_1:
-
+                Intent intent = new Intent(this,LoginStudentActivity.class);
+                startActivity(intent);
                 break;
             default:
                 break;

@@ -37,7 +37,7 @@ public class UnPersonalInfoFragment extends BaseFragment {
     @Override
     public void onFirst(View rootView) {
 
-        infoListView = (ListView) getRootView().findViewById(R.id.lv_item);
+        infoListView = (ListView) getRootView().findViewById(R.id.un_lv_item);
         setListData();
 
         adapter = new SimpleAdapter(getActivity(), listData, R.layout.lv_setting_list_item,

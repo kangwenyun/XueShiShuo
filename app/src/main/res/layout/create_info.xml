@@ -13,6 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:orientation="horizontal">
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -33,13 +34,11 @@
                 android:textSize="20sp"/>
         </RelativeLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="horizontal">
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -52,14 +51,14 @@
                 android:textSize="20sp"/>
             <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:layout_alignParentRight="true"
                 android:orientation="horizontal">
                 <RadioButton
                     android:id="@+id/boy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checked="true"
+                    android:checked="false"
                     android:text="@string/boy"/>
                 <RadioButton
                     android:id="@+id/girl"
@@ -70,13 +69,11 @@
             </RadioGroup>
         </RelativeLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="horizontal">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -97,13 +94,11 @@
                 android:textSize="20sp"/>
         </RelativeLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="horizontal">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -124,10 +119,6 @@
                 android:textSize="20sp"/>
         </RelativeLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/BLACK"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

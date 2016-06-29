@@ -53,21 +53,22 @@ public class LoginStudentActivity extends Activity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        Intent intent;
+        Intent intent = null;
         switch (v.getId()){
             case R.id.login_student:
-
+                intent = new Intent(this,MainUIActivity.class);
                 break;
             case R.id.register:
-                intent = new Intent(LoginStudentActivity.this,RegisterActivity.class);
-                startActivity(intent);
+                intent = new Intent(this,RegisterActivity.class);
                 break;
             case R.id.forget_key:
-                intent = new Intent(LoginStudentActivity.this,FindKeyActivity.class);
-                startActivity(intent);
+                intent = new Intent(this,FindKeyActivity.class);
                 break;
             default:
                 break;
+        }
+        if(intent != null){
+            startActivity(intent);
         }
     }
 }

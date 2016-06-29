@@ -39,7 +39,7 @@
     </com.se7entina.app.view.percent.PercentRelativeLayout>
 
     <ListView
-        android:id="@+id/lv_item"
+        android:id="@+id/un_lv_item"
         android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

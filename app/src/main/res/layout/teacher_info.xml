@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@color/white"
+    android:orientation="vertical">
 
 
     <include
@@ -14,17 +14,13 @@
         />
 
     <!--个人基本信息-->
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <include
-                layout="@layout/teacher_person_info"/>
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <include
+            layout="@layout/teacher_person_info"/>
     </LinearLayout>
 
     <!--分界线-->
@@ -152,6 +148,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:src="@mipmap/manimg"/>
-    </ScrollView>
+        android:src="@mipmap/phone_appointment"/>
 </LinearLayout>
