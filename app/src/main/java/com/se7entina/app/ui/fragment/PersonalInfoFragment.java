@@ -10,10 +10,15 @@ import android.widget.SimpleAdapter;
 import com.se7entina.app.App;
 import com.se7entina.app.R;
 import com.se7entina.app.base.BaseFragment;
+import com.se7entina.app.common.SystemConstant;
 import com.se7entina.app.ui.activity.AboutAppActivity;
+import com.se7entina.app.ui.activity.InfoStudentActivity;
+import com.se7entina.app.ui.activity.InfoTeacherActivity;
 import com.se7entina.app.ui.activity.MyMessageActivity;
 import com.se7entina.app.ui.activity.QuestionFeedbackActivity;
 import com.se7entina.app.ui.activity.UpdateKeyActivity;
+import com.se7entina.app.util.SharedPreferencesUtil;
+import com.se7entina.app.view.percent.PercentRelativeLayout;
 import com.se7entina.app.widgets.ToastTools;
 
 import java.util.ArrayList;
@@ -51,7 +56,7 @@ public class PersonalInfoFragment extends BaseFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = null;
-                switch (position){
+                switch (position) {
                     case 0:
                         //我的消息
                         intent = new Intent(getActivity(), MyMessageActivity.class);
@@ -74,9 +79,24 @@ public class PersonalInfoFragment extends BaseFragment {
                         break;
 
                 }
-                if(intent!=null){
+                if (intent != null) {
                     startActivity(intent);
                 }
+            }
+        });
+
+        PercentRelativeLayout percentRelativeLayout = (PercentRelativeLayout) getRootView().findViewById(R.id.rl_person_info);
+        percentRelativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = null;
+                if(SystemConstant.LOGIN_ROLE_STU.equals(SharedPreferencesUtil.getString(getActivity(),SystemConstant.LOGIN_ROLE))){
+                    intent = new Intent(getActivity(), InfoStudentActivity.class);
+                }else if(SystemConstant.LOGIN_ROLE_TEA.equals(SharedPreferencesUtil.getString(getActivity(),SystemConstant.LOGIN_ROLE))) {
+                    intent = new Intent(getActivity(), InfoTeacherActivity.class);
+                }
+
+                startActivity(intent);
             }
         });
     }

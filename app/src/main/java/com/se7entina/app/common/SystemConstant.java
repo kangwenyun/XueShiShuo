@@ -8,4 +8,7 @@ package com.se7entina.app.common;
 public class SystemConstant {
 
     public static String LOGIN_FLAG = "LOGIN_FLAG";
+    public static String LOGIN_ROLE = "LOGIN_ROLE";
+    public static String LOGIN_ROLE_TEA = "0";
+    public static String LOGIN_ROLE_STU = "1";
 }

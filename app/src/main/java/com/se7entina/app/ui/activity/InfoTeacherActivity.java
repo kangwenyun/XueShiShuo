@@ -2,6 +2,7 @@ package com.se7entina.app.ui.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -40,7 +41,7 @@ public class InfoTeacherActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_teacher);
         TextView tvHead = (TextView) findViewById(R.id.tv_head);
-        tvHead.setText("个人资料");
+        tvHead.setText("学生信息");
         TextView tvClick = (Button) findViewById(R.id.iv_click);
         tvClick.setText("保存");
         name = (EditText)findViewById(R.id.name);
@@ -62,5 +63,9 @@ public class InfoTeacherActivity extends Activity {
         teach_experience = (EditText)findViewById(R.id.teach_experience);
         evaluation = (EditText)findViewById(R.id.evaluation);
         open_appointment = (ImageView)findViewById(R.id.open_appointment);
+    }
+
+    public void back(View view){
+        finish();
     }
 }

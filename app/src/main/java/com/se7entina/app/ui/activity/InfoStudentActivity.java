@@ -32,7 +32,7 @@ public class InfoStudentActivity extends Activity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_student);
         tvHead = (TextView) findViewById(R.id.tv_head);
-        tvHead.setText("个人资料");
+        tvHead.setText("学生信息");
         tvClick = (Button) findViewById(R.id.iv_click);
         tvClick.setText("保存");
         tvClick.setOnClickListener(this);
@@ -66,5 +66,9 @@ public class InfoStudentActivity extends Activity implements View.OnClickListene
             default:
                 break;
         }
+    }
+
+    public void back(View view){
+        finish();
     }
 }

@@ -8,6 +8,8 @@ import android.view.Window;
 import android.widget.Button;
 
 import com.se7entina.app.R;
+import com.se7entina.app.common.SystemConstant;
+import com.se7entina.app.util.SharedPreferencesUtil;
 
 
 /**
@@ -35,9 +37,11 @@ public class SelectActivity extends Activity implements View.OnClickListener {
         switch (v.getId()){
             case R.id.student_selection:
                 intent = new Intent(this,MainUIActivity.class);
+                SharedPreferencesUtil.putString(this,SystemConstant.LOGIN_ROLE,SystemConstant.LOGIN_ROLE_STU);
                 break;
             case  R.id.teacher_selection:
-
+                intent = new Intent(this,MainUIActivity.class);
+                SharedPreferencesUtil.putString(this,SystemConstant.LOGIN_ROLE,SystemConstant.LOGIN_ROLE_TEA);
                 break;
             default:
                 break;
