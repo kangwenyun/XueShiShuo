@@ -29,6 +29,7 @@
             app:layout_marginTopPercent="40%h"
             app:layout_marginLeftPercent="35%w"/>
         <ImageView
+            android:id="@+id/go"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_marginTopPercent="35%h"

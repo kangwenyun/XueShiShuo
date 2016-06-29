@@ -9,7 +9,7 @@
         android:layout_height="0dp"
         android:layout_width="match_parent"
         android:id="@+id/rl_person_info"
-        app:layout_heightPercent ="30%"
+        app:layout_heightPercent ="30%h"
         android:background="@color/helloBg">
 
         <ImageView

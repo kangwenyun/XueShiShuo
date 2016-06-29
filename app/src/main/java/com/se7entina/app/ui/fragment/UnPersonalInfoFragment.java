@@ -1,9 +1,11 @@
 package com.se7entina.app.ui.fragment;
 
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -11,6 +13,7 @@ import com.se7entina.app.App;
 import com.se7entina.app.R;
 import com.se7entina.app.base.BaseFragment;
 import com.se7entina.app.ui.activity.AboutAppActivity;
+import com.se7entina.app.ui.activity.LoginStudentActivity;
 import com.se7entina.app.ui.activity.MyMessageActivity;
 import com.se7entina.app.ui.activity.QuestionFeedbackActivity;
 import com.se7entina.app.ui.activity.UpdateKeyActivity;
@@ -28,6 +31,7 @@ public class UnPersonalInfoFragment extends BaseFragment {
     private ListView infoListView =null;
     private List<Map<String, Object>> listData = null;
     private SimpleAdapter adapter = null;
+    private ImageView go;
 
     @Override
     public int getLayoutId() {
@@ -37,6 +41,14 @@ public class UnPersonalInfoFragment extends BaseFragment {
     @Override
     public void onFirst(View rootView) {
 
+        go = (ImageView)getActivity().findViewById(R.id.go);
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), LoginStudentActivity.class);
+                startActivity(intent);
+            }
+        });
         infoListView = (ListView) getRootView().findViewById(R.id.un_lv_item);
         setListData();
 

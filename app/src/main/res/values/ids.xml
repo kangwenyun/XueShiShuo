@@ -6,4 +6,8 @@
     <item type="id" name="teacher_academy"/>
     <item type="id" name="reply"/>
     <item type="id" name="head_portrait"/>
+    <item type="id" name="primary_school"/>
+    <item type="id" name="middle_school"/>
+    <item type="id" name="high_school"/>
+
 </resources>

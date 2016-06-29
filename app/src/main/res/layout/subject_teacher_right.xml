@@ -11,7 +11,8 @@
             android:id="@+id/primary_subject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:button="@drawable/time_checked"/>
+            android:layout_alignTop="@id/primary_school"
+            android:layout_alignBottom="@id/primary_school"/>
         <TextView
             android:id="@+id/primary_school"
             android:layout_width="wrap_content"
@@ -48,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/middle_school"
-            android:button="@drawable/time_checked"/>
+            android:layout_alignBottom="@id/middle_school"/>
         <TextView
             android:id="@+id/middle_school"
             android:layout_width="wrap_content"
@@ -84,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/high_school"
-            android:button="@drawable/time_checked"/>
+            android:layout_alignBottom="@id/high_school"/>
         <TextView
             android:id="@+id/high_school"
             android:layout_width="wrap_content"
