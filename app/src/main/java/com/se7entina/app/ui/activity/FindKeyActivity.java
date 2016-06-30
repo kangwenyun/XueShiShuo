@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.se7entina.app.R;
 
@@ -47,7 +48,7 @@ public class FindKeyActivity extends Activity implements View.OnClickListener {
                 finish();
                 break;
             case R.id.get_verification_code:
-
+                Toast.makeText(this,"获取验证码成功",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.confirm_1:
                 Intent intent = new Intent(this,LoginStudentActivity.class);

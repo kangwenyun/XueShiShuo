@@ -36,8 +36,8 @@ public class InfoStudentActivity extends Activity implements View.OnClickListene
         tvClick = (Button) findViewById(R.id.iv_click);
         tvClick.setText("保存");
         tvClick.setOnClickListener(this);
-        name = (EditText)findViewById(R.id.teacher_name);
-        name.setText(R.string.name);
+        name = (EditText)findViewById(R.id.name);
+        name.setText(R.string.teacher_name);
         nickname = (EditText)findViewById(R.id.nickname);
         nickname.setText(R.string.teacher_name);
         sex_boy = (RadioButton)findViewById(R.id.sex_boy);

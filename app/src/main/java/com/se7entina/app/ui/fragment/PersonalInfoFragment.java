@@ -51,7 +51,7 @@ public class PersonalInfoFragment extends BaseFragment {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                if(SharedPreferencesUtil.getBoolean(getContext(),SystemConstant.LOGIN_ROLE_STU,true) )
+                if(SystemConstant.LOGIN_ROLE_STU.equals(SharedPreferencesUtil.getString(getActivity(),SystemConstant.LOGIN_ROLE)) )
                 {
                     intent = new Intent(getActivity(), InfoStudentActivity.class);
                 }else{
