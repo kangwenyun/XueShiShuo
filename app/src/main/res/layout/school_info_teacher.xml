@@ -19,6 +19,7 @@
             android:id="@+id/school_name_"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="@android:color/transparent"/>
     </LinearLayout>
     <LinearLayout
@@ -36,6 +37,7 @@
             android:id="@+id/academy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="@android:color/transparent"/>
     </LinearLayout>
     <LinearLayout
@@ -54,6 +56,7 @@
             android:id="@+id/student_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="@android:color/transparent"/>
     </LinearLayout>
 

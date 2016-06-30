@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.se7entina.app.R;
 
@@ -30,7 +31,7 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.register);
         find_key_back = (ImageView)findViewById(R.id.register_back);
         find_key_back.setOnClickListener(this);
-        register_student = (Button)findViewById(R.id.register_teacher);
+        register_student = (Button)findViewById(R.id.register_student);
         register_student.setOnClickListener(this);
         register_teacher = (Button)findViewById(R.id.register_teacher);
         register_teacher.setOnClickListener(this);
@@ -59,7 +60,7 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
                 intent = new Intent(this,InfoTeacherActivity.class);
                 break;
             case R.id.get_verification_code:
-
+                Toast.makeText(this,"获取验证码成功",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.confirm_1:
                 intent = new Intent(this,CreateInfoActivity.class);

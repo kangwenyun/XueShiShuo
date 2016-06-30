@@ -36,6 +36,7 @@ public class PersonalInfoFragment extends BaseFragment {
     private ListView infoListView =null;
     private List<Map<String, Object>> listData = null;
     private SimpleAdapter adapter = null;
+    private PercentRelativeLayout rl_person_info;
 
     @Override
     public int getLayoutId() {
@@ -45,6 +46,20 @@ public class PersonalInfoFragment extends BaseFragment {
     @Override
     public void onFirst(View rootView) {
 
+        rl_person_info = (PercentRelativeLayout)getRootView().findViewById(R.id.rl_person_info);
+        rl_person_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                if(SharedPreferencesUtil.getBoolean(getContext(),SystemConstant.LOGIN_ROLE_STU,true) )
+                {
+                    intent = new Intent(getActivity(), InfoStudentActivity.class);
+                }else{
+                    intent = new Intent(getActivity(), InfoTeacherActivity.class);
+                }
+                startActivity(intent);
+            }
+        });
         infoListView = (ListView) getRootView().findViewById(R.id.lv_item);
         setListData();
 
@@ -82,21 +97,6 @@ public class PersonalInfoFragment extends BaseFragment {
                 if (intent != null) {
                     startActivity(intent);
                 }
-            }
-        });
-
-        PercentRelativeLayout percentRelativeLayout = (PercentRelativeLayout) getRootView().findViewById(R.id.rl_person_info);
-        percentRelativeLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = null;
-                if(SystemConstant.LOGIN_ROLE_STU.equals(SharedPreferencesUtil.getString(getActivity(),SystemConstant.LOGIN_ROLE))){
-                    intent = new Intent(getActivity(), InfoStudentActivity.class);
-                }else if(SystemConstant.LOGIN_ROLE_TEA.equals(SharedPreferencesUtil.getString(getActivity(),SystemConstant.LOGIN_ROLE))) {
-                    intent = new Intent(getActivity(), InfoTeacherActivity.class);
-                }
-
-                startActivity(intent);
             }
         });
     }

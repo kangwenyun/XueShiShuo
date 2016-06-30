@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/chinese"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="70dp"
             android:text="@string/middle_school"/>
         <TextView
             android:id="@+id/class_hour_cost"

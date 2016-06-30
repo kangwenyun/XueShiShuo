@@ -8,7 +8,6 @@
         android:layout_height="match_parent"
         android:text="@string/chinese"
         android:gravity="center"
-
         android:textSize="25sp"/>
     <ImageView
         android:layout_width="15dp"

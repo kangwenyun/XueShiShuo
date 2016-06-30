@@ -20,6 +20,7 @@
             android:id="@+id/email_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="@android:color/transparent"/>
     </LinearLayout>
     <LinearLayout
@@ -37,7 +38,7 @@
             android:id="@+id/contact_phone_number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
             android:background="@android:color/transparent"
             android:textSize="15sp"/>
     </LinearLayout>
