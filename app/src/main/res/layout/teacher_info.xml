@@ -1,151 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:scrollbars="vertical">
-    <LinearLayout
+    android:background="@color/white">
+    <include
+        android:id="@+id/ly_head"
+        layout="@layout/head"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <include
-            android:id="@+id/ly_head"
-            layout="@layout/head"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            />
+        android:layout_height="40dp"
+        />
 
-        <!--个人基本信息-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly_head"
+        android:layout_above="@id/a"
+        android:scrollbars="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-            <include
-                layout="@layout/teacher_person_info"/>
-        </LinearLayout>
-
-        <!--分界线-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="#F5F5F5"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-
-        <!--教学科目-->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:orientation="vertical">
+            <!--个人基本信息-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:text="@string/subject"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#E5E5E5"/>
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <include
+                    layout="@layout/teacher_person_info"/>
             </LinearLayout>
-            <!--具体科目-->
+
+            <!--分界线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F5F5"
+                android:layout_marginTop="10dp"/>
+
+            <!--教学科目-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <include
-                    layout="@layout/subject"/>
-                <ListView
-                    android:id="@+id/subject_list"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/subject"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#E5E5E5"/>
+                </LinearLayout>
+                <!--具体科目-->
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <include
+                        layout="@layout/subject"/>
+                    <ListView
+                        android:id="@+id/subject_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--分界线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F5F5"
+                android:layout_marginTop="10dp"/>
+
+            <!--教学区域-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/area" />
+            </LinearLayout>
+
+            <!--分界线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F5F5"
+                android:layout_marginTop="10dp"/>
+
+            <!--教学经历-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/teach_experience"/>
+            </LinearLayout>
+
+            <!--分界线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F5F5"
+                android:layout_marginTop="10dp"/>
+
+            <!--教学时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/teache_time"/>
+            </LinearLayout>
+
+            <!--分界线-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F5F5F5"
+                android:layout_marginTop="10dp"/>
+
+            <!--自我评价-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/evaluation"/>
             </LinearLayout>
         </LinearLayout>
-
-        <!--分界线-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="#F5F5F5"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-
-        <!--教学区域-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <include
-                layout="@layout/area" />
-        </LinearLayout>
-
-        <!--分界线-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="#F5F5F5"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-
-        <!--教学经历-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:orientation="vertical">
-            <include
-                layout="@layout/teach_experience"/>
-        </LinearLayout>
-
-        <!--分界线-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="#F5F5F5"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-
-        <!--教学时间-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-
-            <include
-                layout="@layout/teache_time"/>
-        </LinearLayout>
-
-        <!--分界线-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="#F5F5F5"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-
-        <!--自我评价-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:orientation="vertical">
-            <include
-                layout="@layout/evaluation"/>
-        </LinearLayout>
-
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
         <!--电话预约-->
         <ImageView
             android:id="@+id/call_teacher"
@@ -154,4 +153,4 @@
             android:layout_gravity="center_horizontal"
             android:src="@mipmap/phone_appointment"/>
     </LinearLayout>
-</ScrollView>
+</RelativeLayout>

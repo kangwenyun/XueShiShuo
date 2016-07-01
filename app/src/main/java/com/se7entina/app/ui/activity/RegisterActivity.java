@@ -54,10 +54,10 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
                 finish();
                 break;
             case R.id.register_student:
-                intent = new Intent(this,InfoStudentActivity.class);
+       //         intent = new Intent(this,InfoStudentActivity.class);
                 break;
             case R.id.register_teacher:
-                intent = new Intent(this,InfoTeacherActivity.class);
+       //         intent = new Intent(this,InfoTeacherActivity.class);
                 break;
             case R.id.get_verification_code:
                 Toast.makeText(this,"获取验证码成功",Toast.LENGTH_SHORT).show();

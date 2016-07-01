@@ -2,6 +2,7 @@ package com.se7entina.app.ui.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -75,6 +76,16 @@ public class InfoTeacherActivity extends Activity {
         evaluation = (EditText)findViewById(R.id.evaluation);
         evaluation.setText(R.string.evaluation_content);
         open_appointment = (ImageView)findViewById(R.id.open_appointment);
+        open_appointment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(true){
+                    open_appointment.setImageResource(R.mipmap.close);
+                }else {
+                    open_appointment.setImageResource(R.mipmap.open);
+                }
+            }
+        });
     }
 
     public void back(View view){

@@ -34,9 +34,9 @@
         android:layout_height="0dp"
         android:background="@android:color/transparent"
         app:layout_heightPercent="7.5%w"
-        app:layout_marginLeftPercent="4.3%"
+        app:layout_marginLeftPercent="94.3%"
         app:layout_marginPercent="2.1%w"
-        app:layout_marginRightPercent="4.3%" />
+        app:layout_marginRightPercent="94.3%" />
 
 
 </com.se7entina.app.view.percent.PercentRelativeLayout>

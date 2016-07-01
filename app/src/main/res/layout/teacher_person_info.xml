@@ -26,6 +26,7 @@
             android:layout_alignTop="@id/teacher_name"
             android:layout_alignBottom="@id/teacher_name"
             android:layout_toRightOf="@id/teacher_name"
+            android:layout_marginLeft="10dp"
             android:src="@mipmap/manimg"/>
         <TextView
             android:id="@+id/teacher_school"
@@ -40,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/teacher_school"
             android:layout_below="@id/teacher_name"
+            android:layout_marginLeft="10dp"
             android:text="@string/teacher_school_name"/>
         <TextView
             android:id="@+id/teacher_academy"
@@ -54,6 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/teacher_academy"
             android:layout_below="@id/teacher_school_name"
+            android:layout_marginLeft="10dp"
             android:text="@string/teacher_academy_name"/>
     </RelativeLayout>
 </LinearLayout>

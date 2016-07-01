@@ -9,5 +9,6 @@
     <item type="id" name="primary_school"/>
     <item type="id" name="middle_school"/>
     <item type="id" name="high_school"/>
+    <item type="id" name="b"/>
 
 </resources>

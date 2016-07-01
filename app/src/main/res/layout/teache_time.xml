@@ -10,7 +10,7 @@
         android:id="@+id/monday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="65dp"
         android:text="@string/monday"/>
     <TextView
         android:id="@+id/tuesday"
@@ -59,7 +59,7 @@
         android:id="@+id/morning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="25dp"
         android:layout_below="@id/monday"
         android:layout_marginTop="10dp"
         android:text="@string/morning"/>
@@ -154,8 +154,7 @@
         android:layout_alignTop="@id/afternoon"
         android:layout_alignLeft="@id/wednesday"
         android:layout_alignRight="@id/wednesday"
-        android:layout_alignBottom="@id/afternoon"
-        android:checked="true"/>
+        android:layout_alignBottom="@id/afternoon"/>
     <CheckBox
         android:id="@+id/thursday_afternoon"
         android:layout_width="wrap_content"
@@ -163,7 +162,8 @@
         android:layout_alignTop="@id/afternoon"
         android:layout_alignLeft="@id/thursday"
         android:layout_alignRight="@id/thursday"
-        android:layout_alignBottom="@id/afternoon"/>
+        android:layout_alignBottom="@id/afternoon"
+        android:checked="true"/>
     <CheckBox
         android:id="@+id/friday_afternoon"
         android:layout_width="wrap_content"
