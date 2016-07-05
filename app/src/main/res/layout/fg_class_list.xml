@@ -78,7 +78,6 @@
             android:dividerHeight="1dp"
             android:fadingEdge="none"
             android:listSelector="@android:color/transparent"
-            android:paddingLeft="12dp"
             android:scrollbarStyle="outsideOverlay"
             android:scrollbars="none" />
 

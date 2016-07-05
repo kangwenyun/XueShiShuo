@@ -2,6 +2,7 @@ package com.se7entina.app.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextPaint;
 import android.view.View;
@@ -49,11 +50,13 @@ public class TeacherInfoActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                if(SharedPreferencesUtil.getBoolean(getApplicationContext(), SystemConstant.LOGIN_FLAG,false)){//未登录
+                if(SharedPreferencesUtil.getBoolean(getApplicationContext(), SystemConstant.LOGIN_FLAG,false)){
+                    //已登录
+                    intent = new Intent(Intent.ACTION_DIAL);
+                    Uri data = Uri.parse("tel:" + "18341842769");
+                    intent.setData(data);
+                }else{
                     intent = new Intent(TeacherInfoActivity.this, LoginStudentActivity.class);
-                }else{//已登录
-                    intent = new Intent(TeacherInfoActivity.this, MainUIActivity.class);
-
                 }
                 startActivity(intent);
             }

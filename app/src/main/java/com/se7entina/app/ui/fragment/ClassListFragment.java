@@ -76,6 +76,14 @@ public class ClassListFragment extends BaseFragment {
             }
         });
 
+
+        classBean = new ClassBean();
+        classBeanList.add(classBean);
+        classBeanList.add(classBean);
+        classBeanList.add(classBean);
+
+
+
         mPtrFrame = (PtrClassicFrameLayout) getRootView().findViewById(R.id.rotate_header_list_view_frame);
         mPtrFrame.setLastUpdateTimeRelateObject(this);
         mPtrFrame.setPtrHandler(new PtrHandler() {
@@ -192,7 +200,7 @@ public class ClassListFragment extends BaseFragment {
 
     protected void updateData() {
         classBean = new ClassBean();
-        classBeanList.add(classBean);
+//        classBeanList.add(classBean);
         classListAdapter.setData(classBeanList);
         listView.setAdapter(classListAdapter);
         mPtrFrame.refreshComplete();

@@ -11,6 +11,8 @@ import android.view.animation.AnimationUtils;
 
 import com.se7entina.app.App;
 import com.se7entina.app.R;
+import com.se7entina.app.common.SystemConstant;
+import com.se7entina.app.util.SharedPreferencesUtil;
 
 /**
  * Class:
@@ -70,9 +72,15 @@ public class HelloActivity extends Activity {
                         Intent intent;
                         App app = (App) getApplication();
                         if (app.initFirstSetting()) {
-                            intent = new Intent(HelloActivity.this, SelectActivity.class);
-                            startActivity(intent);
+                            if(SharedPreferencesUtil.getBoolean(HelloActivity.this, SystemConstant.LOGIN_FLAG, false)){
+                                intent = new Intent(HelloActivity.this,MainUIActivity.class);
+                                startActivity(intent);
+                            }else{
+                                intent = new Intent(HelloActivity.this, SelectActivity.class);
+                                startActivity(intent);
+                            }
                             overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
+
                         } else {
                             intent = new Intent(HelloActivity.this, GuidePageActivity.class);
                             startActivity(intent);
