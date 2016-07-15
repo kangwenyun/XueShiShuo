@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mposalg">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/mposalg.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
