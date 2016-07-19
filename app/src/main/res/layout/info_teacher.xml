@@ -96,8 +96,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@color/white">
-                <include
-                    layout="@layout/subject_teacher"/>
+    <!--            <include
+                    layout="@layout/subject_teacher"/>-->
+                <com.se7entina.app.view.SwipeListView
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.se7entina.app.view.SwipeListView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"

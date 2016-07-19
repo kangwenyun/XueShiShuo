@@ -67,5 +67,7 @@
         android:dividerHeight="1dp"
         android:fadingEdge="none"
         android:listSelector="@android:color/transparent"
-        android:layout_below="@id/rl_person_info"/>
+        android:layout_below="@id/rl_person_info"
+        android:layout_above="@id/exit"/>
+
 </com.se7entina.app.view.percent.PercentRelativeLayout>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -14,6 +15,7 @@ import com.se7entina.app.common.SystemConstant;
 import com.se7entina.app.ui.activity.AboutAppActivity;
 import com.se7entina.app.ui.activity.InfoStudentActivity;
 import com.se7entina.app.ui.activity.InfoTeacherActivity;
+import com.se7entina.app.ui.activity.LoginStudentActivity;
 import com.se7entina.app.ui.activity.MyMessageActivity;
 import com.se7entina.app.ui.activity.QuestionFeedbackActivity;
 import com.se7entina.app.ui.activity.UpdateKeyActivity;
@@ -92,6 +94,10 @@ public class PersonalInfoFragment extends BaseFragment {
                         //关于应用
                         intent = new Intent(getActivity(), AboutAppActivity.class);
                         break;
+                    case 5:
+                        //退出登录
+                        intent = new Intent(getActivity(), LoginStudentActivity.class);
+                        break;
 
                 }
                 if (intent != null) {
@@ -126,6 +132,11 @@ public class PersonalInfoFragment extends BaseFragment {
 
         map = new HashMap<String, Object>();
         map.put("text", "关于应用");
+        map.put("pic",R.mipmap.about_app);
+        listData.add(map);
+
+        map = new HashMap<String, Object>();
+        map.put("text", "退出登录");
         map.put("pic",R.mipmap.about_app);
         listData.add(map);
 

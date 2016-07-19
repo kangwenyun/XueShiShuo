@@ -83,11 +83,12 @@ public class LoginStudentActivity extends FragmentActivity implements View.OnCli
         Intent intent = null;
         switch (v.getId()){
             case R.id.login_student:
-                if(StringUtils.isEmpty(user_name_)|| StringUtils.isEmpty(key)){
-                    ToastTools.show(this,"用户名或密码不能为空");
-                    return;
-                }
-                LoginReq();
+//                if(StringUtils.isEmpty(user_name_)|| StringUtils.isEmpty(key)){
+//                    ToastTools.show(this,"用户名或密码不能为空");
+//                    return;
+//                }
+//                LoginReq();
+                intent = new Intent(this,InfoTeacherActivity.class);
                 break;
             case R.id.register:
                 intent = new Intent(this,RegisterActivity.class);

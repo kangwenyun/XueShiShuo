@@ -10,5 +10,7 @@
     <item type="id" name="middle_school"/>
     <item type="id" name="high_school"/>
     <item type="id" name="b"/>
+    <item type="id" name="exit"/>
+    <item type="id" name="subject"/>
 
 </resources>

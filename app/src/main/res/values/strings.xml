@@ -116,10 +116,11 @@
     <string name="teach_info">教学信息</string>
     <string name="academy">学院</string>
     <string name="student_id">学号</string>
-    <string name="a">科目（仅可选择两科，向右滑动模块可删除）</string>
+    <string name="a">科目（仅可选择两科，向左滑动模块可删除）</string>
     <string name="primary_school">小学</string>
     <string name="teach_time">上课时间</string>
     <string name="open_appointment">开放预约</string>
+    <string name="exit">退出</string>
 
 
 </resources>

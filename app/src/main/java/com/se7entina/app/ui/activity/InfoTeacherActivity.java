@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -12,6 +13,8 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.se7entina.app.R;
+import com.se7entina.app.ui.adapter.SwipeAdapter;
+import com.se7entina.app.view.SwipeListView;
 
 /**
  * Created by Administrator on 2016/6/27.
@@ -27,6 +30,7 @@ public class InfoTeacherActivity extends Activity {
     private EditText school_name_;
     private EditText academy;
     private EditText student_id;
+    private ImageView subject_select;//科目选择
     private CheckBox primary_subject;
     private EditText cost1;//小学课时费
     private CheckBox middle_subject;
@@ -37,6 +41,8 @@ public class InfoTeacherActivity extends Activity {
     private EditText teach_experience;
     private EditText evaluation;
     private ImageView open_appointment;
+    private SwipeListView lv = null;
+    private SwipeAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +67,10 @@ public class InfoTeacherActivity extends Activity {
         academy.setText(R.string.teacher_academy_name);
         student_id = (EditText)findViewById(R.id.student_id);
         student_id.setText("201392329");
+        lv = (SwipeListView)findViewById(R.id.lv);
+        adapter = new SwipeAdapter(this);
+        lv.setAdapter(adapter);
+        subject_select = (ImageView)findViewById(R.id.subject_select);
         primary_subject = (CheckBox)findViewById(R.id.primary_subject);
         cost1 = (EditText)findViewById(R.id.cost1);
         cost1.setText("25");
