@@ -51,6 +51,8 @@ public class FindKeyActivity extends Activity implements View.OnClickListener {
                 Toast.makeText(this,"获取验证码成功",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.confirm_1:
+                //经过判断,密码修改满足条件,成功
+                Toast.makeText(this,"密码修改成功",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this,LoginStudentActivity.class);
                 startActivity(intent);
                 break;

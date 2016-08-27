@@ -6,7 +6,6 @@
     android:background="#8FC5CF">
 
 
-
     <TextView
         android:id="@+id/tv_head"
         android:layout_width="fill_parent"
